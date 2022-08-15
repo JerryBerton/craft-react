@@ -1,0 +1,50 @@
+{
+  "name": "@bertonjs/craft-core",
+  "version": "0.2.0-beta.6",
+  "description": "A React Framework for building extensible drag and drop page editors",
+  "keywords": [
+    "react",
+    "drag-and-drop",
+    "page-editor",
+    "web-builder",
+    "html-builder",
+    "builder",
+    "editor",
+    "draft-js",
+    "framework",
+    "wysiwyg",
+    "html"
+  ],
+  "author": "Jerryberton <jerryberton.wang@gmail.com>",
+  "homepage": "https://github.com/prevwong/craft.js/",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prevwong/craft.js/"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development ../../scripts/build.sh",
+    "build": "cross-env NODE_ENV=production ../../scripts/build.sh",
+    "dev:yalc": "../../scripts/yalc.sh",
+    "clean": "rimraf lib dist"
+  },
+  "bugs": {
+    "url": "https://github.com/prevwong/craft.js/issues"
+  },
+  "dependencies": {
+    "@bertonjs/craft-utils": "^0.2.0-beta.6",
+    "debounce": "^1.2.0",
+    "lodash": "^4.17.20",
+    "tiny-invariant": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.2",
+    "react": "17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17"
+  }
+}

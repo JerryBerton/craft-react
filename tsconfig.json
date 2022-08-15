@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@bertonjs/craft-core": ["packages/core/src/index"],
+      "@bertonjs/*": ["packages/core/src/*"],
+      "@bertonjs/craft-layers": ["packages/layers/src/index"],
+      "@bertonjs/craft-utils": ["packages/utils/src/index"],
+      "@bertonjs/craft-utils/*": ["packages/utils/src/*"],
+    }
+  },
+  "exclude": ["**/node_modules/**"]
+}
